@@ -9,7 +9,12 @@
 	}
 }
 
-.layout-presentation {
-	padding-top: 25px;
-	
+.layout-apresentacao {
+	padding-top: 50px;
+}
+
+.layout-about {
+	margin-top: 50px;
+	padding: 60px 15px; 
+	background-color: #74AFAD;
 }
