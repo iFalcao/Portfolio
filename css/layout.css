@@ -18,3 +18,11 @@
 	padding: 60px 15px; 
 	background-color: #74AFAD;
 }
+
+.layout-projetos {
+	padding: 60px 0;
+
+	background-color: #CCC;
+
+	font-size: 1.8rem; /*Fonte nesse div é de 18px iniciais*/
+}

@@ -28,7 +28,7 @@ html {
   }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 342px) {
   .cabeca__titulo {
     float: left;
     font-size: 1.9em;
@@ -40,7 +40,7 @@ html {
  BOTÃO DE NAVEGAÇÃO
 \*******************/
 .botao-chaveador {
-  padding-top: 12px;
+  padding-top: 8px;
   background: none;
   border: 0;
 
@@ -131,7 +131,7 @@ html {
   padding-bottom: 10px;
 }
 
-.menu__botao:hover {
+.menu__botao:hover, .menu__botao:focus {
   text-decoration: none;
   border-bottom: 1px solid black;
   color: black;
@@ -166,7 +166,7 @@ html {
     font-size: 2.5rem;
 }
 
-.links__unidade:hover {
+.links__unidade:hover, .links__unidade:focus {
   text-decoration: none;
   color: #ec33ff;
 }
@@ -223,4 +223,55 @@ html {
 
 .lista-cursos > li {
   padding: 4px 0;
+}
+
+/*******************\
+ PROJETOS
+\*******************/
+.projetos__titulo {
+  font-size: 2em;
+  font-family: 'Sniglet', Helvetica, sans-serif;
+  
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
+.projeto-unidade {
+  padding-top: 40px;
+}
+
+@media (min-width: 992px) {
+  .projeto-unidade {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.projeto-unidade__titulo {
+  font-size: 1.6em;
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.projeto-unidade__descricao {
+  font-size: 0.9em;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.projeto-unidade--bom, .projeto-unidade--ruim {
+  font-size: 1.1em;
+  font-family: ;
+}
+
+.projeto-unidade--bom {
+  color: green;
+}
+
+.projeto-unidade--ruim {
+  color: red;
+}
+
+.projeto-unidade__qualidade-paragrafo {
+  font-size: 0.9em;
+  font-family: 'Raleway', Helvetica, sans-serif;
 }
