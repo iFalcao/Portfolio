@@ -1,0 +1,15 @@
+.layout-cabeca {
+	/*background-color: #F5F3EE;*/
+	background: url("../imagens/background-tag.jpg") repeat top center;
+}
+
+@media (min-width: 768px) {
+	.layout-cabeca {
+		background: url("../imagens/background-tag.jpg") no-repeat left;
+	}
+}
+
+.layout-presentation {
+	padding-top: 25px;
+	
+}
