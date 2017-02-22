@@ -6,15 +6,15 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="96x96" href="imagens/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
-		<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/layout.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps|Roboto+Mono|Raleway|Bungee+Inline|Sniglet" rel="stylesheet">
-		
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Raleway|Bungee+Inline|Comfortaa|Sniglet" rel="stylesheet">
 	</head>
 
 	<body>
+		
 		<div class="layout-cabeca">
 			<div class="container-fluid">
 				<nav class="navegacao">
@@ -35,7 +35,7 @@
 							<a class="menu__botao" href="#projects"><i class="fa fa-star" aria-hidden="true"></i> Projects</a> 
 						</li>
 						<li class="menu__item"> 
-							<a class="btn btn-danger" href="#">Contact</a>
+							<a class="btn btn-danger" href="mailto:vbsfalcao@gmail.com">Contact</a>
 						</li>
 					</ul>
 					
@@ -43,9 +43,10 @@
 			</div>
 		</div>
 
-		<div class="layout-apresentacao">
+
+		<div class="layout-apresentacao" id="home">
 			<div class="container">
-				<p class="apresentacao__principal">Hello,<br>My name is Ícaro Falcão and this is my portfolio.<br>Feel free to look around and know a little bit more about me :)</p>
+				<p class="apresentacao__principal">Hello,<br>I'm Ícaro Falcão and this is my portfolio.<br>Feel free to look around and know a little bit more about me :)</p>
 				<div class="row   text-center  links">
 					<div class="col-xs-6  col-sm-3">
 						<a href="https://github.com/iFalcao" target="_blank" class="links__unidade"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
@@ -61,26 +62,29 @@
 					</div>
 				</div>
 			</div>
-				<div class="container-fluid layout-about">
-					<div class="row">
-						<div id="about" class="who col-md-6">
-							<h2 class="apresentacao__pergunta-quem">Who <i class="fa fa-question-circle" aria-hidden="true"></i></h2>
-							<p class="apresentacao__resposta-quem">I am a self-taught developer instigated to learn new things. I'm currently studying Computer Engineering but as we could agree, the most important are the languages that i'm currently learning, which are Java, HTML5, CSS3 (mostly bootstrap), JavaScript (with JQuery framework) and MySQL. These combined allow me to create new projects that are avaible on my <a href="https://github.com/iFalcao" target="_blank" class="botao-texto">Github</a> profile. You can have a deeper look at my projects in this <a href="#projects" class="botao-texto">page</a>. I love to create websites and softwares and now i would like the oportunity to work for a company and put my abilities to test and learn more.</p>
+			
+			<div class="container-fluid layout-about">
+				<div class="row">
+					<div id="about" class="who col-md-6">
+						<h2 class="apresentacao__pergunta-quem">Profile <i class="fa fa-question-circle" aria-hidden="true"></i></h2>
+						<p class="apresentacao__resposta-quem">I am a self-taught developer instigated to learn new things. I'm currently studying Computer Engineering. The languages i often use are Java, HTML5, CSS3 (with a lot of Bootstrap), JavaScript (with JQuery framework) and MySQL. These combined allow me to create new projects that are avaible on my <a href="https://github.com/iFalcao" target="_blank" class="botao-texto">Github</a> profile. You can have a deeper look at my projects in this <a href="#projects" class="botao-texto">page</a>. I love to create websites and softwares and now i would like the oportunity to work for a company to put my abilities to test and learn more.</p>
 						</div>
-						<div class="col-md-6">
+					<div class="col-md-6">
 						<h2 class="apresentacao__pergunta-quem">Courses <i class="fa fa-graduation-cap" aria-hidden="true"></i></h2>
 						<ul class="lista-cursos">
 							<li>Certified on Object Oriented Programming using Java - by CursoEmVideo.com</li>
 							<li>Certified on DataBase using MySQL - by CursoEmVideo.com</li>
-							<li>HTML5, CSS3, JavaScript - by AlgaWorks.com (not certified)</li>
+							<li>How to use Git and GitHub - by Udacity.com</li>
+							<li>HTML5, CSS3, JavaScript - by AlgaWorks.com</li>
 							<li>Currently enrolled on Pratical JavaScript - by WatchAndCode.com</li>
 							<li>Currently enrolled on Full Stack Web Development Certification - by FreeCodeCamp.com</li>
-							<li>How to use Git and GitHub - by Udacity.com</li>
 						</ul>
-						</div>
 					</div>
 				</div>
+
+			</div>
 		</div>
+
 
 		<div class="layout-projetos" id="projects">
 			<div class="container">
@@ -88,30 +92,34 @@
 				
 				<article class="projeto-unidade">
 					<h4 class="projeto-unidade__titulo text-center"><i class="fa fa-arrow-right" aria-hidden="true"></i> ATM in Java</h4>
-					<p class="projeto-unidade__descricao text-center">Automated Teller Machine using Java. I used JPA (Java Persistence API) with the framework hibernate. The database i used was MySQL.</p>
+					<p class="projeto-unidade__descricao text-center">Automated Teller Machine using Java. I'm using JPA (Java Persistence API) with the framework Hibernate. The database i'm using is MySQL.</p>
 					<h3 class="projeto-unidade--bom"><i class="fa fa-smile-o" aria-hidden="true"></i> Good</h3>
 					<p class="projeto-unidade__qualidade-paragrafo">This software shows that i dominate every aspect of Object Oriented Programming using Java.</p>
 					<h3 class="projeto-unidade--ruim"><i class="fa fa-frown-o" aria-hidden="true"></i> Bad</h3>
-					<p class="projeto-unidade__qualidade-paragrafo">It's not usable for a company.</p>
+					<p class="projeto-unidade__qualidade-paragrafo">It's not usable for a company and i'm still building it</p>
+					<a href="https://github.com/iFalcao/ATM" target="_blank" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Repository</a>
 				</article>
 
 				<article class="projeto-unidade">
 					<h4 class="projeto-unidade__titulo text-center"><i class="fa fa-arrow-right" aria-hidden="true"></i> My Portfolio</h4>
-					<p class="projeto-unidade__descricao text-center">This very site you are seeing right now! It was made using HTML5, CSS3 and JavaScript. It's responsive and the code is all by the methodology BEM. I'm using BootStrap and Font Awesome because it's awesome!</p>
+					<p class="projeto-unidade__descricao text-center">This very site you are seeing right now! It was made using HTML5, CSS3 and JavaScript. It's responsive and the code was done following the methodology BEM. I'm using BootStrap and Font Awesome because it's awesome!</p>
 					<h3 class="projeto-unidade--bom"><i class="fa fa-smile-o" aria-hidden="true"></i> Good</h3>
-					<p class="projeto-unidade__qualidade-paragrafo">Shows my knowledge towards BootStrap, methodology BEM, FontAwsome, HTML5, CSS3 and JavaScript</p>
+					<p class="projeto-unidade__qualidade-paragrafo">Show my knowledge in BootStrap, methodology BEM, FontAwsome, HTML5, CSS3 and JavaScript.</p>
 					<h3 class="projeto-unidade--ruim"><i class="fa fa-frown-o" aria-hidden="true"></i> Bad</h3>
 					<p class="projeto-unidade__qualidade-paragrafo">Is it supposed to have any?</p>
+					<a href="https://github.com/iFalcao/Portfolio" target="_blank" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Repository</a>
 				</article>
 
 				<article class="projeto-unidade">
 					<h4 class="projeto-unidade__titulo text-center"><i class="fa fa-arrow-right" aria-hidden="true"></i> Brasf website</h4>
-					<p class="projeto-unidade__descricao text-center">Site from Brasf company! It was made using HTML5, CSS3 and JavaScript. It's responsive and the code is all by the methodology BEM. I only used BootStrap for this one.</p>
+					<p class="projeto-unidade__descricao text-center">Site from Brasf company! It was made using HTML5, CSS3 and JavaScript. It's responsive and the code was done following the methodology BEM. I only used BootStrap for this one.</p>
 					<h3 class="projeto-unidade--bom"><i class="fa fa-smile-o" aria-hidden="true"></i> Good</h3>
 					<p class="projeto-unidade__qualidade-paragrafo">It's been used by a company!</p>
 					<h3 class="projeto-unidade--ruim"><i class="fa fa-frown-o" aria-hidden="true"></i> Bad</h3>
-					<p class="projeto-unidade__qualidade-paragrafo">This was my very first website so it's doesn't have as many tools as this one.</p>
+					<p class="projeto-unidade__qualidade-paragrafo">It haven't launch yet.</p>
+					<a href="https://github.com/iFalcao/e-BRASF" target="_blank" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Repository</a>
 				</article>
+				<a href="#home" class="botao-topo  text-center"><i class="fa fa-arrow-circle-up fa-4x" aria-hidden="true"></i></a>
 			</div>
 		</div>
 

@@ -3,6 +3,16 @@
 	background: url("../imagens/background-tag.jpg") repeat top center;
 }
 
+@media (max-width: 767px) {
+	.layout-cabeca {
+		width: 100%;
+		height: 60px;
+		
+		position: fixed;
+		z-index: 9999;
+	}
+}
+
 @media (min-width: 768px) {
 	.layout-cabeca {
 		background: url("../imagens/background-tag.jpg") no-repeat left;
