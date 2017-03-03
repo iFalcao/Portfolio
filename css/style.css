@@ -156,9 +156,9 @@ html {
  APRESENTAÇÃO
 \*******************/
 .apresentacao__principal {
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
   font-size: 2.7rem;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Raleway', Helvetica, sans-serif;
   text-align: center;
   font-weight: bold;
 
