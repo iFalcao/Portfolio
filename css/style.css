@@ -311,6 +311,22 @@ html {
   color: green;
 }
 
+.anime {
+  opacity: 0;
+  /*O transform -100px faz o elemento surgir da esquerda para direita*/
+  transform: translate3d(-150px,0,0);
+  transition: 1s;
+}
+
+.anime-start {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+
+/*******************\
+ BOTÃO-TOPO
+\*******************/
 .botao-topo {
   padding: 0;
   display: block;
