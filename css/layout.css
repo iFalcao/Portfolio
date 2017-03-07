@@ -3,7 +3,7 @@
 	background: url("../imagens/background-tag.jpg") repeat top center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 	.layout-cabeca {
 		width: 100%;
 		height: 60px;
@@ -21,6 +21,12 @@
 
 .layout-apresentacao {
 	padding-top: 50px;
+}
+
+@media (width: 768px) {
+	.layout-apresentacao {
+	padding-top: 140px;
+}
 }
 
 .layout-about {

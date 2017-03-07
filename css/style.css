@@ -165,6 +165,12 @@ html {
   color: black;
 }
 
+/* Fix the cursor in the next line*/
+.typed-cursor{
+    display: none;
+}
+
+
 @media(max-width: 767px) {
   .apresentacao__principal  {
     margin-top: 50px;
@@ -191,20 +197,50 @@ html {
  QUEM???
 \*******************/
 .apresentacao__pergunta-quem {
-  font-size: 2.8rem;
-  font-family: 'Sniglet', Helvetica, sans-serif;
+  text-align: center;
+  font-size: 3.7rem;
+  font-family: 'Sarala', Helvetica, sans-serif;
   font-weight: bold;
   letter-spacing: 0.1em;
 }
 
+.apresentacao__pergunta-quem::after, .apresentacao__cursos::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 240px;
+  border-radius: 5px;
+  background-color: currentColor;
+  margin: 5px auto 25px auto;
+}
+
+.apresentacao__cursos::after {
+  width: 270px;
+}
+
+.apresentacao__cursos {
+  text-align: center;
+  font-size: 3.7rem;
+  font-family: 'Josefin Sans', Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+@media(max-width: 991px) {
+  .apresentacao__cursos {
+    margin-top: 60px;
+  }
+}
+
 .apresentacao__resposta-quem {
+  padding-left: 15px;
   line-height: 1.7em;
   font-family: 'Roboto Mono', monospace;
   font-size: 1.8rem;
+  text-align: center;
 
   color: white;
 }
-
 
 @media(min-width: 992px) {
   .apresentacao__resposta-quem {
@@ -229,7 +265,7 @@ html {
 
 @media (min-width: 992px) {
   .who {
-    border-right: 1px solid white;
+    border-right: 2px solid white;
   }
 }
 
@@ -314,8 +350,8 @@ html {
 .anime {
   opacity: 0;
   /*O transform -100px faz o elemento surgir da esquerda para direita*/
-  transform: translate3d(-150px,0,0);
-  transition: 1s;
+  transform: translate3d(-100px,0,0);
+  transition: .7s;
 }
 
 .anime-start {

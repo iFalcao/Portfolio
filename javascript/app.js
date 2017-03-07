@@ -1,4 +1,10 @@
 $(document).ready(function(){
+	$(function(){
+              $(".apresentacao__principal").typed({
+                strings: ["Hello,<br>I'm Ícaro Falcão and this is my portfolio.<br>Feel free to look around and know a little bit more about me :)"],
+                typeSpeed: 35
+              });
+          });
 
 	function entrada(variavel, tempo) {
 	  	$(variavel).hide();
@@ -6,10 +12,10 @@ $(document).ready(function(){
   	}
 
 	entrada(".cabeca__titulo", 1000);
-	entrada(".link--Github", 1000);
-	entrada(".link--Email", 1600);
-	entrada(".link--LinkedIn", 1900);
-	entrada(".link--skype", 2200);
+	entrada(".link--Github", 3000);
+	entrada(".link--LinkedIn", 3000);
+	entrada(".link--Email", 3000);
+	entrada(".link--skype", 3000);
 	entrada(".menu__item", 1000);
 
 	$('.menu__botao, .botao-topo[href^="#"]').on('click', function(e) {
@@ -17,7 +23,7 @@ $(document).ready(function(){
 		var id = $(this).attr('href'),
 		targetOffset = $(id).offset().top,
 		menuHeight = $('.layout-cabeca').innerHeight();
-		menuHeight = menuHeight < 70 ? 60 : 0;
+		menuHeight = menuHeight < 80 ? 65 : 0;
 
 		$('html, body').animate({ 
 		scrollTop: targetOffset - menuHeight
@@ -48,7 +54,7 @@ debounce = function(func, wait, immediate) {
 (function() {
 	var $target = $('.anime'),
 			animationClass = 'anime-start',
-			offset = $(window).height() * 3/4;
+			offset = $(window).height() * 5/6;
 
 	function animeScroll() {
 		var topoDocumento = $(document).scrollTop();
@@ -66,5 +72,5 @@ debounce = function(func, wait, immediate) {
 
 	$(document).scroll(debounce(function(){
 		animeScroll();
-	}, 200));
+	}, 100));
 }());

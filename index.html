@@ -7,16 +7,17 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="96x96" href="imagens/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/layout.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Raleway|Bungee+Inline|Comfortaa|Sniglet" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Raleway|Bungee+Inline|Comfortaa|Sniglet|Sarala">
+		<link rel="stylesheet" type="text/css" href="">
 	</head>
 
 	<body>
 		
-		<div class="layout-cabeca"  id="home">
+		<div class="layout-cabeca">
 			<div class="container-fluid">
 				<nav class="navegacao">
 					
@@ -45,9 +46,9 @@
 		</div>
 
 
-		<div class="layout-apresentacao">
+		<div class="layout-apresentacao" id="home">
 			<div class="container">
-				<p class="apresentacao__principal">Hello,<br>I'm Ícaro Falcão and this is my portfolio.<br>Feel free to look around and know a little bit more about me :)</p>
+				<span><p class="apresentacao__principal"></p></span>
 				<div class="row   text-center  links">
 					<div class="col-xs-6  col-sm-3">
 						<a href="https://github.com/iFalcao" target="_blank" class="links__unidade  link--Github"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
@@ -71,7 +72,7 @@
 						<p class="apresentacao__resposta-quem">I am a self-taught developer instigated to learn new things. I'm currently studying Computer Engineering. The languages i often use are Java, HTML5, CSS3 (with a lot of Bootstrap), JavaScript (with JQuery framework) and MySQL. These combined allow me to create new projects that are avaible on my <a href="https://github.com/iFalcao" target="_blank" class="botao-texto">Github</a> profile. You can have a deeper look at my projects in this <a href="#projects" class="botao-texto">page</a>. I love to create websites and softwares and now i would like the oportunity to work for a company to put my abilities to test and learn more.</p>
 						</div>
 					<div class="col-md-6">
-						<h2 class="apresentacao__pergunta-quem">Courses <i class="fa fa-graduation-cap" aria-hidden="true"></i></h2>
+						<h2 class="apresentacao__cursos">Courses <i class="fa fa-graduation-cap" aria-hidden="true"></i></h2>
 						<ul class="lista-cursos">
 							<li>Certified on Object Oriented Programming using Java - by CursoEmVideo.com</li>
 							<li>Certified on DataBase using MySQL - by CursoEmVideo.com</li>
@@ -93,7 +94,7 @@
 
 				<article class="projeto-unidade  anime">
 					<h4 class="projeto-unidade__titulo text-center"><i class="fa fa-arrow-right" aria-hidden="true"></i> My Portfolio</h4>
-					<p class="projeto-unidade__descricao text-center">This very site you are seeing right now! It was made using HTML5, CSS3 and JavaScript(JQuery). It's responsive and the code was done following the methodology BEM. I'm using BootStrap and Font Awesome because it's awesome!</p>
+					<p class="projeto-unidade__descricao text-center">This very site you are seeing right now! It was made using HTML5, CSS3 and JavaScript(JQuery). It's responsive and the code was done following the methodology BEM. It also has this incredible animations from JQuery. I'm using BootStrap and Font Awesome because it's awesome!</p>
 					<h3 class="projeto-unidade--bom"><i class="fa fa-smile-o" aria-hidden="true"></i> Good</h3>
 					<p class="projeto-unidade__qualidade-paragrafo">Shows my knowledge in BootStrap, methodology BEM, FontAwsome, HTML5, CSS3 and JavaScript.</p>
 					<h3 class="projeto-unidade--ruim"><i class="fa fa-frown-o" aria-hidden="true"></i> Bad</h3>
@@ -124,8 +125,19 @@
 			</div>
 		</div>
 
+		
 		<script src='javascript/jquery-3.1.1.min.js'></script>
 		<script src="javascript/app.js"></script>
+		<script src="javascript/typed.js"></script>
+		<script>
+          $(function(){
+              $(".apresentacao__principal").typed({
+                strings: ["Hello,<br>I'm Ícaro Falcão and this is my portfolio.<br>Feel free to look around and know a little bit more about me :)"],
+                typeSpeed: 0
+              });
+          });
+        </script>
+		
 
 	</body>
 </html>
