@@ -4,6 +4,7 @@ $(document).ready(function(){
 	$('#pagina-principal').css('height', tamanhoTela);
 
 
+
 	function entrada(variavel, tempo) {
 	  	$(variavel).hide();
 		$(variavel).fadeIn(tempo);
@@ -31,9 +32,11 @@ $(document).ready(function(){
 		}, 800);
 	});
 
-	$( ".js-chave" ).click(
+	$( ".js-chave, .js-fechar" ).click(
   		function() {
     		$( ".js-menu" ).toggle( "menu--exibindo" );
+    		$(".js-fechar").toggle(".menu--exibindo");
+			$(".js-chave").toggle(".js-fechar");
  	});
 });
 

@@ -78,20 +78,21 @@ html {
   .menu {
     position: fixed;
     z-index: 900;
-    top: 64px;
-    right: 0;
+    top: 59px;
+    right: 1px;
     bottom: 0;
 
     display: none;
     height: 120px;
-    width: 150px;
+    width: 100px;
     margin: 0;
+    padding-left: 10px;
 
     background-color: rgba(92, 156, 171, 0.9);
     color: white;
 
-    font-size: 1.4rem;
-    text-align: left;
+    font-size: 1.5rem;
+    text-align: justify;
 
     list-style: none;
   }
@@ -109,6 +110,10 @@ html {
 
   .menu--exibindo {
     display: block;
+  }
+
+  .js-fechar {
+    display: none;
   }
 }
 
@@ -199,7 +204,7 @@ html {
 .apresentacao__pergunta-quem {
   text-align: center;
   font-size: 3.7rem;
-  font-family: 'Sarala', Helvetica, sans-serif;
+  font-family: 'Lemonada', cursive;
   font-weight: bold;
   letter-spacing: 0.1em;
 }
@@ -221,7 +226,7 @@ html {
 .apresentacao__cursos {
   text-align: center;
   font-size: 3.7rem;
-  font-family: 'Josefin Sans', Helvetica, sans-serif;
+  font-family: 'Lemonada', cursive;
   font-weight: bold;
   letter-spacing: 0.1em;
 }
