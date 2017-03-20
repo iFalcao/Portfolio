@@ -1,10 +1,8 @@
 $(document).ready(function(){
-	$(function(){
-              $(".apresentacao__principal").typed({
-                strings: ["Hello,<br>I'm Ícaro Falcão and this is my portfolio.<br>Feel free to look around and know a little bit more about me :)"],
-                typeSpeed: 35
-              });
-          });
+
+	var tamanhoTela = window.innerHeight;
+	$('#pagina-principal').css('height', tamanhoTela);
+
 
 	function entrada(variavel, tempo) {
 	  	$(variavel).hide();
@@ -12,21 +10,24 @@ $(document).ready(function(){
   	}
 
 	entrada(".cabeca__titulo", 1000);
-	entrada(".link--Github", 3000);
-	entrada(".link--LinkedIn", 3000);
-	entrada(".link--Email", 3000);
-	entrada(".link--skype", 3000);
+	entrada(".link--Github", 1500);
+	entrada(".link--LinkedIn", 1500);
+	entrada(".link--Email", 1500);
+	entrada(".link--skype", 1500);
 	entrada(".menu__item", 1000);
 
-	$('.menu__botao, .botao-topo[href^="#"]').on('click', function(e) {
+
+
+	$('.menu__botao, .apresentacao__start--botao, .botao-topo[href^="#"]').on('click', function(e) {
 		e.preventDefault();
 		var id = $(this).attr('href'),
 		targetOffset = $(id).offset().top,
 		menuHeight = $('.layout-cabeca').innerHeight();
+
 		menuHeight = menuHeight < 80 ? 65 : 0;
 
 		$('html, body').animate({ 
-		scrollTop: targetOffset - menuHeight
+			scrollTop: targetOffset - menuHeight
 		}, 800);
 	});
 
@@ -54,7 +55,7 @@ debounce = function(func, wait, immediate) {
 (function() {
 	var $target = $('.anime'),
 			animationClass = 'anime-start',
-			offset = $(window).height() * 5/6;
+			offset = $(window).height() * 6/7;
 
 	function animeScroll() {
 		var topoDocumento = $(document).scrollTop();

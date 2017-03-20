@@ -78,7 +78,7 @@ html {
   .menu {
     position: fixed;
     z-index: 900;
-    top: 60px;
+    top: 64px;
     right: 0;
     bottom: 0;
 
@@ -87,9 +87,7 @@ html {
     width: 150px;
     margin: 0;
 
-    border: 2px solid #eee;
-
-    background-color: black;
+    background-color: rgba(92, 156, 171, 0.9);
     color: white;
 
     font-size: 1.4rem;
@@ -111,11 +109,6 @@ html {
 
   .menu--exibindo {
     display: block;
-  }
-
-  .menu__botao:hover, .menu__botao:focus {
-    text-decoration: none;
-    color: green;
   }
 }
 
@@ -144,10 +137,12 @@ html {
 }
 
 
-.btn-danger {
+.btn-success {
   font-size: 1.05em;
   font-family: "Raleway", Helvetica, sans-serif;
   font-weight: bold;
+
+  border: 1px solid green;
 }
 
 
@@ -156,8 +151,20 @@ html {
  APRESENTAÇÃO
 \*******************/
 .apresentacao__principal {
+  padding-top: 15px;
+
   letter-spacing: 0.05em;
-  font-size: 2.7rem;
+  font-size: 9.4rem;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bold;
+
+  color: white;
+}
+
+.apresentacao__texto {
+  letter-spacing: 0.05em;
+  font-size: 2.4rem;
   font-family: 'Raleway', Helvetica, sans-serif;
   text-align: center;
   font-weight: bold;
@@ -165,32 +172,25 @@ html {
   color: black;
 }
 
-/* Fix the cursor in the next line*/
-.typed-cursor{
-    display: none;
-}
-
-
 @media(max-width: 767px) {
-  .apresentacao__principal  {
-    margin-top: 50px;
+  .apresentacao__principal {
+    font-size: 4.9rem;
   }
+
+  .apresentacao__texto {
+    font-size: 1.4em;
+  }
+
 }
 
-.links {
-  padding-top: 25px;
+.apresentacao__start--botao {
+  color: white;
 }
 
-.links__unidade {
-    margin-top: 45px;
-
-    font-family: 'Raleway', Helvetica, sans-serif;
-    font-size: 2.5rem;
-}
-
-.links__unidade:hover, .links__unidade:focus {
-  text-decoration: none;
-  color: #ec33ff;
+@media(max-width: 768px) {
+  .apresentacao__principal  {
+    margin-top: 75px;
+  }
 }
 
 /*******************\
@@ -371,6 +371,44 @@ html {
 }
 
 .botao-topo:hover, .botao-topo:focus {
+  text-decoration: none;
+  color: green;
+}
+
+/*******************\
+ RODAPÉ
+\*******************/
+.rodape__principal, .rodape__contact-me {
+  padding: 15px 0 0 0;
+
+  text-align: center;
+  font-family: "Raleway", Helvetica, sans-serif;
+  font-size: 1.15em;
+
+  color: white;
+}
+
+.rodape__contact-me::after {
+  content: "";
+  width: 25px;
+  display: block;
+
+  margin: 10px auto;
+
+  border: 1px solid white;
+  
+}
+
+.links__unidade {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    color: white;
+}
+
+.links__unidade:hover, .links__unidade:focus {
+  transition-duration: 0.5s;
   text-decoration: none;
   color: green;
 }

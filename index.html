@@ -12,64 +12,55 @@
 		<link rel="stylesheet" type="text/css" href="css/layout.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Raleway|Bungee+Inline|Comfortaa|Sniglet|Sarala">
-		<link rel="stylesheet" type="text/css" href="">
 	</head>
 
 	<body>
 		
-		<div class="layout-cabeca">
-			<div class="container-fluid">
-				<nav class="navegacao">
-					
-					<h1 class="cabeca__titulo">Ícaro<span class="sobrenome"> Falcão</span></h1>
-					
-					<div class="navegacao__menu">
-						<button class="botao-chaveador  js-chave">
-							<img src="imagens/menu.png" height="50" width="50" alt="botao-chaveador">	
-						</button>
-					</div>
+		<div id="pagina-principal">
+			<div class="layout-cabeca">
+				<div class="container-fluid">
+					<nav class="navegacao">
 						
-					<ul class="menu  js-menu">
-						<li class="menu__item"> 
-							<a class="menu__botao" href="#about"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a> 
-						</li>
-						<li class="menu__item"> 
-							<a class="menu__botao" href="#projects"><i class="fa fa-star" aria-hidden="true"></i> Projects</a> 
-						</li>
-						<li class="menu__item"> 
-							<a class="btn btn-danger" href="mailto:vbsfalcao@gmail.com">Contact</a>
-						</li>
-					</ul>
-					
-				</nav>			
+						<h1 class="cabeca__titulo">Ícaro<span class="sobrenome"> Falcão</span></h1>
+						
+						<div class="navegacao__menu">
+							<button class="botao-chaveador  js-chave">
+								<img src="imagens/menu.png" height="50" width="50" alt="botao-chaveador">	
+							</button>
+						</div>
+							
+						<ul class="menu  js-menu">
+							<li class="menu__item"> 
+								<a class="menu__botao" title="More information about myself" href="#about"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a> 
+							</li>
+							<li class="menu__item"> 
+								<a class="menu__botao" title="More information about my projects" href="#projects"><i class="fa fa-cog fa-spin" aria-hidden="true"></i> Projects</a> 
+							</li>
+							<li class="menu__item"> 
+								<a class="btn btn-success" title="Contact me directly" href="mailto:vbsfalcao@gmail.com">Contact</a>
+							</li>
+						</ul>
+						
+					</nav>			
+				</div>
+			</div>
+
+
+			<div class="layout-apresentacao" id="home">
+				<div class="container">
+					<h1 class="apresentacao__principal">WELCOME</h1>
+					<p class="apresentacao__texto">Press start to begin!</p>
+					<div class="text-center"><a href="#about" title="LET'S GO!" class="apresentacao__start--botao"><i class="fa fa-play-circle fa-5x" aria-hidden="true"></i></a></div>
+				</div>
 			</div>
 		</div>
 
 
-		<div class="layout-apresentacao" id="home">
-			<div class="container">
-				<span><p class="apresentacao__principal"></p></span>
-				<div class="row   text-center  links">
-					<div class="col-xs-6  col-sm-3">
-						<a href="https://github.com/iFalcao" target="_blank" class="links__unidade  link--Github"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-					</div>
-					<div class="col-xs-6  col-sm-3">
-						<a href="https://www.linkedin.com/in/%C3%ADcaro-falc%C3%A3o-9265b6128/" target="_blank" class="links__unidade  link--LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></p>
-					</div>
-					<div class="col-xs-6  col-sm-3">
-						<a href="mailto:vbsfalcao@gmail.com" target="_blank" class="links__unidade  link--Email"><i class="fa fa-envelope"   aria-hidden="true"></i> Email</a></p>
-					</div>
-					<div class="col-xs-6  col-sm-3">
-						<a href="skype:vbsfalcao@gmail.com" target="_blank" class="links__unidade  link--skype"><i class="fa fa-skype" aria-hidden="true"></i> Skype</a></p>
-					</div>
-				</div>
-			</div>
-		
 			<div class="container-fluid layout-about">
 				<div class="row">
 					<div id="about" class="who col-md-6">
 						<h2 class="apresentacao__pergunta-quem">Profile <i class="fa fa-question-circle" aria-hidden="true"></i></h2>
-						<p class="apresentacao__resposta-quem">I am a self-taught developer instigated to learn new things. I'm currently studying Computer Engineering. The languages i often use are Java, HTML5, CSS3 (with a lot of Bootstrap), JavaScript (with JQuery framework) and MySQL. These combined allow me to create new projects that are avaible on my <a href="https://github.com/iFalcao" target="_blank" class="botao-texto">Github</a> profile. You can have a deeper look at my projects in this <a href="#projects" class="botao-texto">page</a>. I love to create websites and softwares and now i would like the oportunity to work for a company to put my abilities to test and learn more.</p>
+						<p class="apresentacao__resposta-quem">I am a self-taught developer instigated to learn new things. I'm currently studying Computer Engineering. The languages i often use are Java, HTML5, CSS3 (with a lot of Bootstrap), JavaScript (with JQuery framework) and I use MySQL for database stuff. These combined allow me to create new projects that are avaible on my <a href="https://github.com/iFalcao" target="_blank" class="botao-texto">Github</a> profile. You can have a deeper look at my projects <a href="#projects" class="botao-texto">bellow</a>. I love to create websites and softwares and now i would like the oportunity to work for a company to put my abilities to test and learn more.</p>
 						</div>
 					<div class="col-md-6">
 						<h2 class="apresentacao__cursos">Courses <i class="fa fa-graduation-cap" aria-hidden="true"></i></h2>
@@ -85,7 +76,7 @@
 				</div>
 
 			</div>
-		</div>
+		
 
 
 		<div class="layout-projetos" id="projects">
@@ -99,17 +90,17 @@
 					<p class="projeto-unidade__qualidade-paragrafo">Shows my knowledge in BootStrap, methodology BEM, FontAwsome, HTML5, CSS3 and JavaScript.</p>
 					<h3 class="projeto-unidade--ruim"><i class="fa fa-frown-o" aria-hidden="true"></i> Bad</h3>
 					<p class="projeto-unidade__qualidade-paragrafo">Is it supposed to have any?</p>
-					<a href="https://github.com/iFalcao/Portfolio" target="_blank" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Repository</a>
+					<a href="https://github.com/iFalcao/Portfolio" target="_blank"  title="Get the code" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Repository</a>
 				</article>
 
 				<article class="projeto-unidade  anime">
-					<h4 class="projeto-unidade__titulo text-center"><i class="fa fa-arrow-right" aria-hidden="true"></i> Brasf website</h4>
-					<p class="projeto-unidade__descricao text-center">Site from Brasf company! I'm using HTML5, CSS3 and JavaScript. It's responsive and the code is all by the methodology BEM. The Google Maps API is also integrated.</p>
+					<h4 class="projeto-unidade__titulo text-center"><i class="fa fa-arrow-right" aria-hidden="true"></i> Restful-Notes</h4>
+					<p class="projeto-unidade__descricao text-center">Restful Web Service using Java with Maven, Jersey and JDBC.</p>
 					<h3 class="projeto-unidade--bom"><i class="fa fa-smile-o" aria-hidden="true"></i> Good</h3>
-					<p class="projeto-unidade__qualidade-paragrafo">Demonstrate another type of design that i'm currently creating.</p>
+					<p class="projeto-unidade__qualidade-paragrafo">Important base API project for my others projects in construction</p>
 					<h3 class="projeto-unidade--ruim"><i class="fa fa-frown-o" aria-hidden="true"></i> Bad</h3>
-					<p class="projeto-unidade__qualidade-paragrafo">It hasn't launched yet.</p>
-					<a href="https://github.com/iFalcao/e-BRASF" target="_blank" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Repository</a>
+					<p class="projeto-unidade__qualidade-paragrafo"><br></p>
+					<a href="https://github.com/iFalcao/Rest-Notas" target="_blank" title="Get the code" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Repository</a>
 				</article>
 
 				<article class="projeto-unidade  anime">
@@ -119,9 +110,40 @@
 					<p class="projeto-unidade__qualidade-paragrafo">- Uses features from JFrame<br>- Can be used by the keyboard</p>
 					<h3 class="projeto-unidade--ruim"><i class="fa fa-frown-o" aria-hidden="true"></i> Bad</h3>
 					<p class="projeto-unidade__qualidade-paragrafo">It only has default operations so far.</p>
-					<a href="https://github.com/iFalcao/BasicCalculator" target="_blank" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Repository</a>
+					<a href="https://github.com/iFalcao/BasicCalculator" title="Get the code" target="_blank" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Repository</a>
 				</article>
-				<a href="#home" class="botao-topo  text-center"><i class="fa fa-arrow-circle-up fa-4x" aria-hidden="true"></i></a>
+
+				<article class="projeto-unidade  anime">
+					<h4 class="projeto-unidade__titulo text-center"><i class="fa fa-arrow-right" aria-hidden="true"></i> Brasf website</h4>
+					<p class="projeto-unidade__descricao text-center">Brasf's e-commerce. I'm using the same technologies of my portfolio. The Google Maps API is also integrated.</p>
+					<h3 class="projeto-unidade--bom"><i class="fa fa-smile-o" aria-hidden="true"></i> Good</h3>
+					<p class="projeto-unidade__qualidade-paragrafo">Demonstrate another type of design that i'm currently creating.</p>
+					<h3 class="projeto-unidade--ruim"><i class="fa fa-frown-o" aria-hidden="true"></i> Bad</h3>
+					<p class="projeto-unidade__qualidade-paragrafo">It hasn't launch yet.</p>
+					<a href="https://github.com/iFalcao/e-BRASF" title="Get the code" target="_blank" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Repository</a>
+				</article>
+				<a href="#home" title="Back to the top of the page" class="botao-topo  text-center"><i class="fa fa-arrow-circle-up fa-4x" aria-hidden="true"></i></a>
+			</div>
+		</div>
+
+		<div class="layout-rodape">
+			<div class="container-fluid">
+				<h4 class="rodape__principal">Developed by Ícaro Falcão. 2017 &copy; All Rights reserved</h4>
+				<h5 class="rodape__contact-me">Contact me:</h5>
+				<div class="row   text-center  links">
+						<div class="col-xs-6 col-sm-2 col-md-1 col-sm-offset-2 col-md-offset-4">
+							<a href="https://github.com/iFalcao" title="Find me on Github" target="_blank" class="links__unidade  link--Github"><i class="fa fa-github fa-2x" aria-hidden="true"></i><br>Github</a>
+						</div>
+						<div class="col-xs-6 col-sm-2 col-md-1">
+							<a href="https://www.linkedin.com/in/%C3%ADcaro-falc%C3%A3o-9265b6128/" title="Find me on Linkedin" target="_blank" class="links__unidade  link--LinkedIn"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i><br>LinkedIn </a></p>
+						</div>
+						<div class="col-xs-6 col-sm-2 col-md-1">
+							<a href="mailto:vbsfalcao@gmail.com" title="Send me an e-mail" target="_blank" class="links__unidade  link--Email"><i class="fa fa-envelope fa-2x"   aria-hidden="true"></i><br> Email</a></p>
+						</div>
+						<div class="col-xs-6 col-sm-2 col-md-1">
+							<a href="skype:vbsfalcao@gmail.com" title="Find me on Skype" target="_blank" class="links__unidade  link--skype"><i class="fa fa-skype fa-2x" aria-hidden="true"></i><br>Skype</a></p>
+						</div>
+					</div>
 			</div>
 		</div>
 
@@ -129,14 +151,17 @@
 		<script src='javascript/jquery-3.1.1.min.js'></script>
 		<script src="javascript/app.js"></script>
 		<script src="javascript/typed.js"></script>
+		<!-- 
 		<script>
           $(function(){
               $(".apresentacao__principal").typed({
-                strings: ["Hello,<br>I'm Ícaro Falcão and this is my portfolio.<br>Feel free to look around and know a little bit more about me :)"],
-                typeSpeed: 0
+                strings: ["Hello, I'm Ícaro Falcão and this is my portfolio.<br>Feel free to look around and know a little bit more about me :)"],
+                typeSpeed: 15
               });
           });
         </script>
+         -->
+		
 		
 
 	</body>
