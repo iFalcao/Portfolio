@@ -83,7 +83,7 @@ html {
     bottom: 0;
 
     display: none;
-    height: 200px;
+    height: 190px;
     width: 100px;
     margin: 0;
     padding-left: 10px;
@@ -91,10 +91,15 @@ html {
     background-color: rgba(92, 156, 171, 0.9);
     color: white;
 
-    font-size: 1.5rem;
+    font-size: 0.9em;
     text-align: justify;
 
     list-style: none;
+  }
+
+  .menu--curriculo {
+    width: 170px;
+    height: 120px;
   }
 
   .menu__item{
@@ -134,26 +139,11 @@ html {
   }
 }
 
-.menu__botao {
+.menu__botao, .menu__botao--links {
   text-decoration: none;
   color: white;
 
   padding-bottom: 10px;
-}
-
-.menu__botao--links {
-  text-decoration: none;
-  color: white;
-
-  padding-bottom: 10px;
-}
-
-.btn-success {
-  font-size: 1.05em;
-  font-family: "Raleway", Helvetica, sans-serif;
-  font-weight: bold;
-
-  border: 1px solid green;
 }
 
 
@@ -229,7 +219,7 @@ html {
 .apresentacao__pergunta-quem::after {
   content: "";
   display: block;
-  height: 4px;
+  height: 2px;
   width: 200px;
   border-radius: 5px;
   background-color: currentColor;
@@ -301,11 +291,11 @@ html {
   color: green;
 }
 
-.profile__link {
+.profile__link, .profile__link--curriculo {
   color: green;
 }
 
-.profile__link--email {
+.profile__link--email  {
   color: blue;
   font-weight: normal;
 }
@@ -327,7 +317,7 @@ html {
   content: "";
   display: block;
   height: 2px;
-  width: 400px;
+  width: 250px;
   border-radius: 5px;
   background-color: currentColor;
   margin: 5px 0 25px 0;

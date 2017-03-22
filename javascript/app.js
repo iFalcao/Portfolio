@@ -8,7 +8,7 @@ $(document).ready(function(){
 		$(variavel).fadeIn(tempo);
   	}
 
-	entrada(".cabeca__titulo", 1000);
+	entrada(".cabeca__titulo", 3000);
 
 	$('.menu__botao, .scroll-animate, .apresentacao__start--botao, .botao-cursos, .profile__link, .botao-topo[href^="#"]').on('click', function(e) {
 		e.preventDefault();
@@ -16,7 +16,7 @@ $(document).ready(function(){
 		targetOffset = $(id).offset().top,
 		menuHeight = $('.layout-cabeca').innerHeight();
 
-		menuHeight = menuHeight < 80 ? 65 : 0;
+		menuHeight = menuHeight < 80 ? 60 : 0;
 
 		$('html, body').animate({ 
 			scrollTop: targetOffset - menuHeight
@@ -29,7 +29,6 @@ $(document).ready(function(){
     		$(".js-fechar").toggle(".menu--exibindo");
 			$(".js-chave").toggle(".js-fechar");
  	});
-});
 
 debounce = function(func, wait, immediate) {
 	var timeout;
@@ -49,7 +48,7 @@ debounce = function(func, wait, immediate) {
 (function() {
 	var $target = $('.anime'),
 			animationClass = 'anime-start',
-			offset = $(window).height();
+			offset = $(window).height() * 3/4;
 
 	function animeScroll() {
 		var topoDocumento = $(document).scrollTop();
@@ -69,3 +68,4 @@ debounce = function(func, wait, immediate) {
 		animeScroll();
 	}, 100));
 }());
+});

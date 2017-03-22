@@ -23,7 +23,7 @@
 
 	background-color: #CCC;
 
-	font-size: 1.8rem; /*Fonte nesse div é de 18px iniciais*/
+	font-size: 1.8rem;
 }
 
 .layout-rodape {
@@ -32,6 +32,10 @@
 
 .layout-skillset {
 	padding-top: 12px;
+}
+
+.layout-curriculo {
+	padding-top: 90px;
 }
 
 /* LAYOUT PARA MOBILES */
@@ -49,9 +53,8 @@
 		background: url("../imagens/cidade.jpg") center;
 	}
 	.layout-cursos {
-
 		padding: 50px 0;
-		background: url("../imagens/bg-code2.png") center;
+		background: url("../imagens/bg-code2.png") repeat bottom;
 	}
 }
 
