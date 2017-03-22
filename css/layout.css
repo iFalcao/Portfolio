@@ -6,12 +6,13 @@
 	.layout-cabeca {
 		width: 100%;
 		margin-top: 0;
+		height: 60px;
 		
 		position: fixed;
 		z-index: 9999;
 	}
 
-	#pagina-principal {
+	#pagina-principal { 
 		background: url("../imagens/cidade.jpg") center;
 	}
 }
@@ -36,11 +37,12 @@
 	}
 }
 
-
-.layout-about {
+.layout-profile {
 	padding: 60px 15px; 
+
+	text-align: center;
 	
-	background-color: #74AFAD;
+	background: url("../imagens/bg-quote.jpg") center;
 }
 
 .layout-projetos {

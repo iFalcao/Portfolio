@@ -3,7 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta content="Hello, I'm Ícaro Falc&atilde;o and this is my portfolio. Feel free to look around and know a little bit more about me :)" name="description">
-		<title>Ícaro Falcão | Site Pessoal</title>
+		<title>Ícaro Falcão | Portfolio</title>
 		<link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="96x96" href="imagens/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
@@ -11,7 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/layout.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Raleway|Bungee+Inline|Comfortaa|Lemonada|Sniglet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Raleway|Bungee+Inline|Sniglet|Handlee|Griffy">
 	</head>
 
 	<body>
@@ -21,7 +21,7 @@
 				<div class="container-fluid">
 					<nav class="navegacao">
 						
-						<h1 class="cabeca__titulo">Ícaro<span class="sobrenome"> Falcão</span></h1>
+						<h1 class="cabeca__titulo">Ícaro<span> Falcão</span></h1>
 						
 						<div class="navegacao__menu">
 							<button class="botao-chaveador  js-chave">
@@ -48,39 +48,39 @@
 				</div>
 			</div>
 
-
-			<div class="layout-apresentacao" id="home">
+			<div class="layout-apresentacao">
 				<div class="container">
 					<h1 class="apresentacao__principal">WELCOME</h1>
 					<p class="apresentacao__texto">I'm Ícaro Falcão and this is my Portfolio.<br>Press start to begin!</p>
 					<div class="text-center"><a href="#about" title="LET'S GO!" class="apresentacao__start--botao"><i class="fa fa-play-circle fa-5x" aria-hidden="true"></i></a></div>
 				</div>
 			</div>
+		
 		</div>
 
 
-			<div class="container-fluid layout-about">
+		<div class="layout-profile">
+			<div class="container ">
 				<div class="row">
-					<div id="about" class="who col-md-6">
-						<h2 class="apresentacao__pergunta-quem">Profile <i class="fa fa-question-circle" aria-hidden="true"></i></h2>
-						<p class="apresentacao__resposta-quem">I am a self-taught developer instigated to learn new things. I'm currently studying Computer Engineering. The languages i often use are Java, HTML5, CSS3 (with a lot of Bootstrap), JavaScript (with JQuery framework) and I use MySQL for database stuff. These combined allow me to create new projects that are avaible on my <a href="https://github.com/iFalcao" target="_blank" class="botao-texto">Github</a> profile. You can have a deeper look at my projects <a href="#projects" class="botao-texto">bellow</a>. I love to create websites and softwares and now i would like the oportunity to work for a company to put my abilities to test and learn more.</p>
-						</div>
-					<div class="col-md-6">
-						<h2 class="apresentacao__cursos">Courses <i class="fa fa-graduation-cap" aria-hidden="true"></i></h2>
-						<ul class="lista-cursos">
-							<li>Certified on Object Oriented Programming using Java - by CursoEmVideo.com</li>
-							<li>Certified on DataBase using MySQL - by CursoEmVideo.com</li>
-							<li>How to use Git and GitHub - by Udacity.com</li>
-							<li>HTML5, CSS3, JavaScript - by AlgaWorks.com</li>
-							<li>Currently enrolled on Pratical JavaScript - by WatchAndCode.com</li>
-							<li>Currently enrolled on Full Stack Web Development Certification - by FreeCodeCamp.com</li>
-						</ul>
+					<div id="about" class="col-md-6 col-md-offset-3 profile-conteudo">
+						<h2 class="apresentacao__pergunta-quem">About me</h2>
+						<img src="imagens/perfil.jpg" class="img-responsive  center-block  img-circle  img-perfil">
+						<p class="apresentacao__resposta-quem"><i class="fa fa-quote-left quote-mark" aria-hidden="true"></i> I am a self-taught developer instigated to learn new things. I'm currently studying Computer Engineering. The languages i often use are Java, HTML5, CSS3 (with a lot of Bootstrap), JavaScript (with JQuery framework) and I use MySQL for database. <br><br> These combined allow me to create new projects that are avaible on my <a href="https://github.com/iFalcao" target="_blank" class="botao-texto">Github</a> profile. You can have a deeper look at my projects <a href="#projects" class="botao-texto">bellow</a>. I love to create websites and softwares and now i would like the oportunity to work for a company to put my abilities to test and learn more.</p>
+
+						<footer class="profile__rodape">
+							<h4>Do next... <i class="fa fa-forward" aria-hidden="true"></i></h4>
+							<ul>
+								<li class="profile__list"><a class="profile__link" href="">Check out my Resumè</a></li>
+								<li class="profile__list"><a class="profile__link" href="#projects">See my avaible projects</a></li>
+								<li class="profile__list">Send me an e-mail:<a class="profile__link  profile__link--email" href="mailto:vbsfalcao@gmail.com">    vbsfalcao@gmail.com</a></li>
+							</ul>
+						</footer>
 					</div>
 				</div>
-
 			</div>
-		
+		</div>
 
+		
 
 		<div class="layout-projetos" id="projects">
 			<div class="container">
@@ -125,7 +125,7 @@
 					<p class="projeto-unidade__qualidade-paragrafo">It hasn't launch yet.</p>
 					<a href="https://github.com/iFalcao/e-BRASF" title="Get the code" target="_blank" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Repository</a>
 				</article>
-				<a href="#home" title="Back to the top of the page" class="botao-topo  text-center"><i class="fa fa-arrow-circle-up fa-4x" aria-hidden="true"></i></a>
+				<a href="#pagina-principal" title="Back to the top of the page" class="botao-topo  text-center"><i class="fa fa-arrow-circle-up fa-4x" aria-hidden="true"></i></a>
 			</div>
 		</div>
 
@@ -157,19 +157,5 @@
 		  integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
 		  crossorigin="anonymous"></script>
 		<script src="javascript/app.js"></script>
-		<script src="javascript/typed.js"></script>
-		<!-- 
-		<script>
-          $(function(){
-              $(".apresentacao__principal").typed({
-                strings: ["Hello, I'm Ícaro Falcão and this is my portfolio.<br>Feel free to look around and know a little bit more about me :)"],
-                typeSpeed: 15
-              });
-          });
-        </script>
-         -->
-		
-		
-
 	</body>
 </html>

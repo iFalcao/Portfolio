@@ -3,23 +3,14 @@ $(document).ready(function(){
 	var tamanhoTela = window.innerHeight;
 	$('#pagina-principal').css('height', tamanhoTela);
 
-
-
 	function entrada(variavel, tempo) {
 	  	$(variavel).hide();
 		$(variavel).fadeIn(tempo);
   	}
 
 	entrada(".cabeca__titulo", 1000);
-	entrada(".link--Github", 1500);
-	entrada(".link--LinkedIn", 1500);
-	entrada(".link--Email", 1500);
-	entrada(".link--skype", 1500);
-	entrada(".menu__item", 1000);
 
-
-
-	$('.menu__botao, .apresentacao__start--botao, .botao-topo[href^="#"]').on('click', function(e) {
+	$('.menu__botao, .apresentacao__start--botao, .profile__link, .botao-topo[href^="#"]').on('click', function(e) {
 		e.preventDefault();
 		var id = $(this).attr('href'),
 		targetOffset = $(id).offset().top,
@@ -58,7 +49,7 @@ debounce = function(func, wait, immediate) {
 (function() {
 	var $target = $('.anime'),
 			animationClass = 'anime-start',
-			offset = $(window).height() * 6/7;
+			offset = $(window).height() * 3/4;
 
 	function animeScroll() {
 		var topoDocumento = $(document).scrollTop();

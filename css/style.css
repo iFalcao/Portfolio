@@ -78,7 +78,7 @@ html {
   .menu {
     position: fixed;
     z-index: 900;
-    top: 59px;
+    top: 60px;
     right: 1px;
     bottom: 0;
 
@@ -156,8 +156,6 @@ html {
  APRESENTAÇÃO
 \*******************/
 .apresentacao__principal {
-  padding-top: 15px;
-
   letter-spacing: 0.05em;
   font-size: 9.4rem;
   font-family: 'Raleway', Helvetica, sans-serif;
@@ -169,12 +167,11 @@ html {
 
 .apresentacao__texto {
   letter-spacing: 0.05em;
-  font-size: 2.4rem;
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 2.7rem;
+  font-family: 'Handlee', Helvetica, sans-serif;
   text-align: center;
-  font-weight: bold;
 
-  color: black;
+  color: white;
 }
 
 @media(max-width: 767px) {
@@ -183,28 +180,42 @@ html {
   }
 
   .apresentacao__texto {
-    font-size: 1.4em;
+    font-size: 1.45em;
   }
 
 }
 
 .apresentacao__start--botao {
-  color: white;
+  color: black;
 }
 
 @media(max-width: 768px) {
   .apresentacao__principal  {
-    margin-top: 75px;
+    margin-top: 70px;
   }
 }
 
 /*******************\
  QUEM???
 \*******************/
+.img-perfil {
+  padding-bottom: 35px;
+}
+
+.profile-conteudo {
+  padding: 40px 35px 0 35px;
+  background-color: #CCC;
+}
+
+.quote-mark {
+  position: relative;
+  top: -25px;
+  left: -20px;
+}
+
 .apresentacao__pergunta-quem {
-  text-align: center;
-  font-size: 3.7rem;
-  font-family: 'Lemonada', cursive;
+  font-size: 3.2rem;
+  font-family: 'Griffy', cursive;
   font-weight: bold;
   letter-spacing: 0.1em;
 }
@@ -213,14 +224,10 @@ html {
   content: "";
   display: block;
   height: 4px;
-  width: 240px;
+  width: 200px;
   border-radius: 5px;
   background-color: currentColor;
   margin: 5px auto 25px auto;
-}
-
-.apresentacao__cursos::after {
-  width: 270px;
 }
 
 .apresentacao__cursos {
@@ -237,22 +244,36 @@ html {
   }
 }
 
+/* Tablets e celulares */
 .apresentacao__resposta-quem {
-  padding-left: 15px;
-  line-height: 1.7em;
+  line-height: 1.5em;
   font-family: 'Roboto Mono', monospace;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-align: center;
 
-  color: white;
+  color: black;
 }
 
+/* Notebooks pra cima */
 @media(min-width: 992px) {
   .apresentacao__resposta-quem {
     padding-right: 15px;
     padding-left: 10px;
 
-    text-align: justify;
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .lista-cursos {
+    font-size: 1.8rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: normal;
+
+    color: white;
+  }
+
+  .apresentacao__pergunta-quem {
+    font-size: 3.7rem;
   }
 }
 
@@ -268,18 +289,39 @@ html {
   border-bottom: none;
 }
 
-@media (min-width: 992px) {
-  .who {
-    border-right: 2px solid white;
-  }
+.profile__rodape {
+  margin-top: 30px;
+  padding: 10px 10px 0 10px;
+
+  font-family: 'Raleway', monospace;
+  font-size: 1.6rem;
+  text-align: left;
+
+  background-color: #a9a9a9;
 }
 
+.profile__list {
+  padding-bottom: 10px;
+
+  font-weight: bold;
+
+  color: green;
+}
+
+.profile__link {
+  color: green;
+}
+
+.profile__link--email {
+  color: blue;
+  font-weight: normal;
+}
 
 /*******************\
  CURSOS
 \*******************/
 .lista-cursos {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: 'Roboto Mono', monospace;
   font-weight: normal;
 
@@ -356,7 +398,7 @@ html {
   opacity: 0;
   /*O transform -100px faz o elemento surgir da esquerda para direita*/
   transform: translate3d(-100px,0,0);
-  transition: .7s;
+  transition: .3s;
 }
 
 .anime-start {
