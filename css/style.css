@@ -83,7 +83,7 @@ html {
     bottom: 0;
 
     display: none;
-    height: 120px;
+    height: 200px;
     width: 100px;
     margin: 0;
     padding-left: 10px;
@@ -127,7 +127,7 @@ html {
     padding-right: 0;
   }
 
-  .menu__botao:hover, .menu__botao:focus {
+  .menu__botao:hover, .menu__botao:focus, .menu__botao--links:hover, .menu__botao--links:focus {
     text-decoration: none;
     border-bottom: 1px solid black;
     color: black;
@@ -141,6 +141,12 @@ html {
   padding-bottom: 10px;
 }
 
+.menu__botao--links {
+  text-decoration: none;
+  color: white;
+
+  padding-bottom: 10px;
+}
 
 .btn-success {
   font-size: 1.05em;
@@ -157,7 +163,7 @@ html {
 \*******************/
 .apresentacao__principal {
   letter-spacing: 0.05em;
-  font-size: 9.4rem;
+  font-size: 7.4rem;
   font-family: 'Raleway', Helvetica, sans-serif;
   text-align: center;
   font-weight: bold;
@@ -196,14 +202,14 @@ html {
 }
 
 /*******************\
- QUEM???
+ PROFILE
 \*******************/
 .img-perfil {
   padding-bottom: 35px;
 }
 
 .profile-conteudo {
-  padding: 40px 35px 0 35px;
+  padding: 40px 35px 25px 35px;
   background-color: #CCC;
 }
 
@@ -220,7 +226,7 @@ html {
   letter-spacing: 0.1em;
 }
 
-.apresentacao__pergunta-quem::after, .apresentacao__cursos::after {
+.apresentacao__pergunta-quem::after {
   content: "";
   display: block;
   height: 4px;
@@ -228,20 +234,6 @@ html {
   border-radius: 5px;
   background-color: currentColor;
   margin: 5px auto 25px auto;
-}
-
-.apresentacao__cursos {
-  text-align: center;
-  font-size: 3.7rem;
-  font-family: 'Lemonada', cursive;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-}
-
-@media(max-width: 991px) {
-  .apresentacao__cursos {
-    margin-top: 60px;
-  }
 }
 
 /* Tablets e celulares */
@@ -259,8 +251,9 @@ html {
   .apresentacao__resposta-quem {
     padding-right: 15px;
     padding-left: 10px;
+    padding-top: 20px;
 
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     text-align: left;
   }
 
@@ -320,7 +313,29 @@ html {
 /*******************\
  CURSOS
 \*******************/
+.apresentacao__cursos {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: 'Handlee', monospace;
+
+  letter-spacing: 0.1em;
+
+  color: white;
+}
+
+.apresentacao__cursos::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: currentColor;
+  margin: 5px 0 25px 0;
+}
+
 .lista-cursos {
+  text-align: left;
+
   font-size: 1.6rem;
   font-family: 'Roboto Mono', monospace;
   font-weight: normal;
@@ -328,9 +343,51 @@ html {
   color: white;
 }
 
-.lista-cursos > li {
+.lista-cursos__unidade {
+  text-align: left;
   padding: 4px 0;
 }
+
+.lista-cursos__unidade > i {
+  color: yellow;
+}
+
+.lista-cursos__unidade::after {
+    content: "";
+    display: block;
+
+    width: 20px;
+    margin: 10px -20px;
+
+    border: 1px solid darkMagenta;
+  }
+
+@media (min-width: 992px) {
+  .lista-cursos {
+    font-size: 1.9rem;
+    font-family: 'Roboto Mono', monospace;
+  }
+}
+
+
+/*******************\
+ SKILLS
+\*******************/
+.cursos-skillset {
+  text-align: center;
+}
+
+.cursos-skillset__titulo {
+  font-size: 1.5em;
+  font-family: "Comfortaa", Helvetica, sans-serif;
+
+}
+
+.cursos-skillset__unidade {
+  font-family: "Sniglet", Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
 
 /*******************\
  PROJETOS
@@ -398,7 +455,7 @@ html {
   opacity: 0;
   /*O transform -100px faz o elemento surgir da esquerda para direita*/
   transform: translate3d(-100px,0,0);
-  transition: .3s;
+  transition: .7s;
 }
 
 .anime-start {

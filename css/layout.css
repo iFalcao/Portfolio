@@ -2,6 +2,39 @@
 	background: url("../imagens/background-tag.jpg") repeat top center;
 }
 
+.layout-profile {
+	padding: 60px 15px; 
+
+	text-align: center;
+	
+	background: url("../imagens/bg-quote.jpg") center;
+}
+
+
+.layout-cursos {
+	padding: 70px 15px 30px 15px;
+
+	background: url("../imagens/bg-code2.png") right;
+}
+
+
+.layout-projetos {
+	padding: 60px 0;
+
+	background-color: #CCC;
+
+	font-size: 1.8rem; /*Fonte nesse div é de 18px iniciais*/
+}
+
+.layout-rodape {
+	background-color: rgba(92, 156, 171, 0.9);
+}
+
+.layout-skillset {
+	padding-top: 12px;
+}
+
+/* LAYOUT PARA MOBILES */
 @media (max-width: 768px) {
 	.layout-cabeca {
 		width: 100%;
@@ -15,44 +48,33 @@
 	#pagina-principal { 
 		background: url("../imagens/cidade.jpg") center;
 	}
+	.layout-cursos {
+
+		padding: 50px 0;
+		background: url("../imagens/bg-code2.png") center;
+	}
 }
 
+
+/* LAYOUT PARA NOTEBOOKS E ACIMA*/
 @media (min-width: 992px) {
 	.layout-cabeca {
 		background: url("../imagens/background-tag.jpg") no-repeat left;
 	}
 	
 	#pagina-principal {
-		background: url("../imagens/cidade-notebook-bg.png") top;
+		background: url("../imagens/cidade-notebook-bg.png") center;
 	}
 }
 
+
+/* LAYOUT PARA TELAS MTO GRANDES*/
 @media (min-width: 1615px) {
 	.layout-cabeca {
 		background: url("../imagens/background-tag.jpg") no-repeat left;
-	}
+	
 	
 	#pagina-principal {
 		background: url("../imagens/cidade.jpg") center;
 	}
-}
-
-.layout-profile {
-	padding: 60px 15px; 
-
-	text-align: center;
-	
-	background: url("../imagens/bg-quote.jpg") center;
-}
-
-.layout-projetos {
-	padding: 60px 0;
-
-	background-color: #CCC;
-
-	font-size: 1.8rem; /*Fonte nesse div é de 18px iniciais*/
-}
-
-.layout-rodape {
-	background-color: rgba(92, 156, 171, 0.9);
 }

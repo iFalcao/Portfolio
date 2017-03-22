@@ -20,7 +20,6 @@
 			<div class="layout-cabeca">
 				<div class="container-fluid">
 					<nav class="navegacao">
-						
 						<h1 class="cabeca__titulo">Ícaro<span> Falcão</span></h1>
 						
 						<div class="navegacao__menu">
@@ -37,13 +36,20 @@
 								<a class="menu__botao" title="More information about myself" href="#about"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a> 
 							</li>
 							<li class="menu__item"> 
+								<a class="menu__botao" title="More information about mys skills" href="#cursos"><i class="fa fa-star" aria-hidden="true"></i> Skills</a> 
+							</li>
+							<li class="menu__item"> 
 								<a class="menu__botao" title="More information about my projects" href="#projects"><i class="fa fa-cog fa-spin" aria-hidden="true"></i> Projects</a> 
 							</li>
 							<li class="menu__item"> 
-								<a class="btn btn-success" title="Contact me directly" href="mailto:vbsfalcao@gmail.com">Contact</a>
+								<a class="menu__botao--links" title="Check out my Github" href="https://github.com/iFalcao" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a> 
+							</li>
+							<li class="menu__item"> 
+								<a class="menu__botao--links" title="Find me on Linkedin" href="https://www.linkedin.com/in/%C3%ADcaro-falc%C3%A3o-9265b6128/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a> 
 							</li>
 						</ul>
 						
+
 					</nav>			
 				</div>
 			</div>
@@ -51,7 +57,7 @@
 			<div class="layout-apresentacao">
 				<div class="container">
 					<h1 class="apresentacao__principal">WELCOME</h1>
-					<p class="apresentacao__texto">I'm Ícaro Falcão and this is my Portfolio.<br>Press start to begin!</p>
+					<p class="apresentacao__texto">I'm Ícaro Falcão and this is my Portfolio.<br><strong style="color: black;">Press start to begin!</strong></p>
 					<div class="text-center"><a href="#about" title="LET'S GO!" class="apresentacao__start--botao"><i class="fa fa-play-circle fa-5x" aria-hidden="true"></i></a></div>
 				</div>
 			</div>
@@ -62,24 +68,96 @@
 		<div class="layout-profile">
 			<div class="container ">
 				<div class="row">
-					<div id="about" class="col-md-6 col-md-offset-3 profile-conteudo">
+					<div id="about" class="col-md-8 col-md-offset-2 profile-conteudo">
 						<h2 class="apresentacao__pergunta-quem">About me</h2>
 						<img src="imagens/perfil.jpg" class="img-responsive  center-block  img-circle  img-perfil">
-						<p class="apresentacao__resposta-quem"><i class="fa fa-quote-left quote-mark" aria-hidden="true"></i> I am a self-taught developer instigated to learn new things. I'm currently studying Computer Engineering. The languages i often use are Java, HTML5, CSS3 (with a lot of Bootstrap), JavaScript (with JQuery framework) and I use MySQL for database. <br><br> These combined allow me to create new projects that are avaible on my <a href="https://github.com/iFalcao" target="_blank" class="botao-texto">Github</a> profile. You can have a deeper look at my projects <a href="#projects" class="botao-texto">bellow</a>. I love to create websites and softwares and now i would like the oportunity to work for a company to put my abilities to test and learn more.</p>
+						<p class="apresentacao__resposta-quem"><i class="fa fa-quote-left quote-mark" aria-hidden="true"></i> I am a self-taught developer instigated to learn new things. I'm currently studying Computer Engineering. The languages i often use are Java, HTML5, CSS3 (with a lot of Bootstrap), JavaScript (with JQuery framework) and I use MySQL for database. <br><br> These combined allow me to create new projects that are avaible on my <a href="https://github.com/iFalcao" target="_blank" class="botao-texto">Github</a> profile. You can have a deeper look at my projects <a href="#projects" class="botao-texto">bellow</a>. I love to create websites and softwares so feel free to contact me if you like them too.</p>
 
 						<footer class="profile__rodape">
 							<h4>Do next... <i class="fa fa-forward" aria-hidden="true"></i></h4>
 							<ul>
 								<li class="profile__list"><a class="profile__link" href="">Check out my Resumè</a></li>
-								<li class="profile__list"><a class="profile__link" href="#projects">See my avaible projects</a></li>
-								<li class="profile__list">Send me an e-mail:<a class="profile__link  profile__link--email" href="mailto:vbsfalcao@gmail.com">    vbsfalcao@gmail.com</a></li>
+								<li class="profile__list"><a class="profile__link scroll-animate" href="#projects">See more about my projects</a></li>
+								<li class="profile__list">Send me an e-mail:<a class="profile__link  profile__link--email" href="mailto:vbsfalcao@gmail.com"> vbsfalcao@gmail.com</a></li>
 							</ul>
 						</footer>
+					<a href="#cursos" title="Go to courses" class="botao-cursos  text-center"><i class="fa fa-arrow-circle-down fa-4x" aria-hidden="true"></i></a>
 					</div>
+
 				</div>
 			</div>
 		</div>
 
+		<div id="cursos" class="layout-cursos">
+			<div class="container">
+				<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-5">
+							<div class="jumbotron">
+								<h2 class="cursos-skillset"><i class="fa fa-star" aria-hidden="true"></i> Skillset <i class="fa fa-star" aria-hidden="true"></i></h2>
+								
+								<h3 class="cursos-skillset__titulo"><i class="fa fa-coffee fa-2x" aria-hidden="true"></i> Java</h3>
+								<ul>
+									<li class="cursos-skillset__unidade">JDBC e JPA</li>
+									<li class="cursos-skillset__unidade">Maven</li>
+									<li class="cursos-skillset__unidade">Jersey</li>
+									<li class="cursos-skillset__unidade">Restfull Api's</li>
+								</ul>
+								
+								<h3 class="cursos-skillset__titulo"><i class="fa fa-database fa-2x" aria-hidden="true"></i> Database</h3>
+								<ul>
+									<li class="cursos-skillset__unidade">MySQL</li>
+								</ul>
+								
+								<h3 class="cursos-skillset__titulo"><i class="fa fa-html5 fa-2x" aria-hidden="true"></i> HTML</h3>
+								<ul>
+									<li class="cursos-skillset__unidade">Methodology BEM</li>
+								</ul>
+								
+								<h3  class="cursos-skillset__titulo"><i class="fa fa-css3 fa-2x" aria-hidden="true"></i> CSS</h3>
+								<ul>
+									<li class="cursos-skillset__unidade">Bootstrap</li>
+								</ul>
+								
+								<h3  class="cursos-skillset__titulo"><img src="imagens/js.png" height="50" width="50"> JavaScript</h3>
+								<ul>
+									<li class="cursos-skillset__unidade">JQuery</li>
+								</ul>
+								
+								<h3  class="cursos-skillset__titulo"><i class="fa fa-git-square fa-2x" aria-hidden="true"></i> Version Control</h3>
+								<ul>
+									<li class="cursos-skillset__unidade">Git</li>
+									<li class="cursos-skillset__unidade">Github</li>
+								</ul>
+							</div>
+						</div>
+					
+
+				
+					<div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-1">
+						<h2 class="apresentacao__cursos">Courses <i class="fa fa-graduation-cap" aria-hidden="true"></i></h2>
+						<ul class="lista-cursos">
+							<li class="lista-cursos__unidade">OOP using Java <br>- by CursoEmVideo.com</li>
+							
+							<li class="lista-cursos__unidade">DataBase using MySQL <br>- by CursoEmVideo.com</li>
+							
+							<li class="lista-cursos__unidade">How to use Git  and GitHub <br>- by Udacity.com</li>
+							
+							<li class="lista-cursos__unidade">HTML5 (Methodology BEM)<br>CSS3 (Bootstrap)<br>JavaScript(JQuery) <br>- by AlgaWorks.com</li>
+
+							<li class="lista-cursos__unidade">Currently enrolled on Pratical JavaScript <br>- by WatchAndCode.com</li>
+							
+							<li class="lista-cursos__unidade">Currently enrolled on Full Stack Web Development Certification <br>- by  FreeCodeCamp.com</li>
+							
+							<li class="lista-cursos__unidade">Currently enrolled on Spring Data JPA <br>- by  DevMedia.com.br</li>
+
+						</ul>
+					</div>	
+
+
+				</div>
+				<a href="#projects" title="Go to projects" class="botao-cursos  text-center  center-block"><i class="fa fa-arrow-circle-down fa-4x" aria-hidden="true"></i></a>
+			</div>
+		</div>
 		
 
 		<div class="layout-projetos" id="projects">

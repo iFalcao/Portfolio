@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 	entrada(".cabeca__titulo", 1000);
 
-	$('.menu__botao, .apresentacao__start--botao, .profile__link, .botao-topo[href^="#"]').on('click', function(e) {
+	$('.menu__botao, .scroll-animate, .apresentacao__start--botao, .botao-cursos, .profile__link, .botao-topo[href^="#"]').on('click', function(e) {
 		e.preventDefault();
 		var id = $(this).attr('href'),
 		targetOffset = $(id).offset().top,
@@ -49,7 +49,7 @@ debounce = function(func, wait, immediate) {
 (function() {
 	var $target = $('.anime'),
 			animationClass = 'anime-start',
-			offset = $(window).height() * 3/4;
+			offset = $(window).height();
 
 	function animeScroll() {
 		var topoDocumento = $(document).scrollTop();
