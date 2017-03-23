@@ -1,14 +1,15 @@
 $(document).ready(function(){
 
 	var tamanhoTela = window.innerHeight;
-	$('#pagina-principal').css('height', tamanhoTela);
 
+	$('#pagina-principal').css('height', tamanhoTela);
+	
 	function entrada(variavel, tempo) {
 	  	$(variavel).hide();
 		$(variavel).fadeIn(tempo);
   	}
 
-	entrada(".cabeca__titulo", 3000);
+	entrada(".cabeca__titulo", 2500);
 
 	$('.menu__botao, .scroll-animate, .apresentacao__start--botao, .botao-cursos, .profile__link, .botao-topo[href^="#"]').on('click', function(e) {
 		e.preventDefault();

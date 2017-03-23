@@ -1,3 +1,7 @@
+/*******************\
+ GLOBAL
+\*******************/
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +11,8 @@ body {
 html {
   font-size: 62.5%;
 }
+
+
 
 
 
@@ -83,8 +89,8 @@ html {
     bottom: 0;
 
     display: none;
-    height: 190px;
-    width: 100px;
+    height: 220px;
+    width: 140px;
     margin: 0;
     padding-left: 10px;
 
@@ -125,17 +131,17 @@ html {
 @media(min-width: 992px) {
   .menu__item {
     display: inline-block;
-    padding: 0 10px 5px 10px;
-  }
-
-  .menu__botao--right {
-    padding-right: 0;
+    padding: 0 7px 5px 7px;
   }
 
   .menu__botao:hover, .menu__botao:focus, .menu__botao--links:hover, .menu__botao--links:focus {
     text-decoration: none;
     border-bottom: 1px solid black;
     color: black;
+  }
+
+  .menu__item--linguagem {
+    float: right;
   }
 }
 
@@ -145,6 +151,8 @@ html {
 
   padding-bottom: 10px;
 }
+
+
 
 
 
@@ -160,11 +168,13 @@ html {
 
   color: white;
 }
-
+    
 .apresentacao__texto {
+  padding-top: 10px;
+
   letter-spacing: 0.05em;
-  font-size: 2.7rem;
-  font-family: 'Handlee', Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-family: 'Raleway', Helvetica, sans-serif;
   text-align: center;
 
   color: white;
@@ -175,8 +185,12 @@ html {
     font-size: 4.9rem;
   }
 
+  .apresentacao__principal--br {
+    font-size: 4.5rem;
+  }
+
   .apresentacao__texto {
-    font-size: 1.45em;
+    font-size: 1.25em;
   }
 
 }
@@ -187,30 +201,36 @@ html {
 
 @media(max-width: 768px) {
   .apresentacao__principal  {
-    margin-top: 70px;
+    margin-top: 110px;
   }
 }
+
+
+
+
 
 /*******************\
  PROFILE
 \*******************/
+
+/* Tablets e celulares */
 .img-perfil {
   padding-bottom: 35px;
 }
 
 .profile-conteudo {
-  padding: 40px 35px 25px 35px;
+  padding: 40px 10px 25px 10px;
   background-color: #CCC;
 }
 
 .quote-mark {
   position: relative;
   top: -25px;
-  left: -20px;
 }
 
+/* Tablets e celulares */
 .apresentacao__pergunta-quem {
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   font-family: 'Griffy', cursive;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -226,14 +246,20 @@ html {
   margin: 5px auto 25px auto;
 }
 
-/* Tablets e celulares */
+
 .apresentacao__resposta-quem {
-  line-height: 1.5em;
+  padding: 1px;
+
+  line-height: 1.4em;
   font-family: 'Roboto Mono', monospace;
   font-size: 1.6rem;
   text-align: center;
 
   color: black;
+}
+
+.botao-cursos {
+  color: white;
 }
 
 /* Notebooks pra cima */
@@ -256,7 +282,11 @@ html {
   }
 
   .apresentacao__pergunta-quem {
-    font-size: 3.7rem;
+    font-size: 4.2rem;
+  }
+
+  .profile-conteudo {
+    padding: 40px 35px 25px 35px;
   }
 }
 
@@ -304,7 +334,7 @@ html {
  CURSOS
 \*******************/
 .apresentacao__cursos {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-weight: bold;
   font-family: 'Handlee', monospace;
 
@@ -365,7 +395,25 @@ html {
 \*******************/
 .cursos-skillset {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
+
+.cursos-skillset::after {
+    content: "";
+    width: 20px;
+    display: block;
+
+    margin: 20px auto 20px auto;
+    border: 1px solid green;
+}
+
+@media (max-width: 768px) {
+  .cursos-skillset--br {
+    font-size: 1.8em;
+  }
+
+}
+
 
 .cursos-skillset__titulo {
   font-size: 1.5em;
@@ -506,3 +554,4 @@ html {
   text-decoration: none;
   color: green;
 }
+

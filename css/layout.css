@@ -50,7 +50,7 @@
 	}
 
 	#pagina-principal { 
-		background: url("../imagens/cidade.jpg") center;
+		background: url("../imagens/cidade.jpg") right;
 	}
 	.layout-cursos {
 		padding: 50px 0;
@@ -75,7 +75,7 @@
 @media (min-width: 1615px) {
 	.layout-cabeca {
 		background: url("../imagens/background-tag.jpg") no-repeat left;
-	
+	}
 	
 	#pagina-principal {
 		background: url("../imagens/cidade.jpg") center;
