@@ -89,7 +89,7 @@ html {
     bottom: 0;
 
     display: none;
-    height: 220px;
+    height: 185px;
     width: 140px;
     margin: 0;
     padding-left: 10px;
@@ -520,15 +520,22 @@ html {
 /*******************\
  RODAPÉ
 \*******************/
-.rodape__principal, .rodape__contact-me {
+.rodape__principal, .rodape__linguagem, .rodape__contact-me {
   padding: 15px 0 0 0;
 
   text-align: center;
   font-family: "Raleway", Helvetica, sans-serif;
   font-size: 1.15em;
+  text-decoration: none;
 
   color: white;
 }
+
+.rodape__linguagem > a {
+  font-weight: bold;
+  color: green;
+}
+
 
 .rodape__contact-me::after {
   content: "";
