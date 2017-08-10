@@ -1,7 +1,7 @@
 $(document).ready(function(){
-
+	
+	// Define o tamanho da página principal de acordo com o tamanho da tela do usuário
 	var tamanhoTela = window.innerHeight;
-
 	$('#pagina-principal').css('height', tamanhoTela);
 	
 	function entrada(variavel, tempo) {
