@@ -36,7 +36,7 @@
 								<a class="menu__botao" title="More information about myself" href="#about"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a> 
 							</li>
 							<li class="menu__item"> 
-								<a class="menu__botao" title="Go to my blog" href="https://icarofalcao.me"><i class="fa fa-rss" aria-hidden="true"></i> Blog</a> 
+								<a class="menu__botao--links" title="Go to my blog" href="https://icarofalcao.me" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i> Blog</a> 
 							</li>
 							<li class="menu__item"> 
 								<a class="menu__botao" title="More information about my projects" href="#projects"><i class="fa fa-cog fa-spin" aria-hidden="true"></i> Projects</a> 
@@ -66,13 +66,19 @@
 					<div id="about" class="col-md-8 col-md-offset-2 profile-conteudo">
 						<h2 class="apresentacao__pergunta-quem">About me</h2>
 						<img src="imagens/perfil.jpg" class="img-responsive  center-block  img-circle  img-perfil">
-						<p class="apresentacao__resposta-quem"><i class="fa fa-quote-left quote-mark" aria-hidden="true"></i> I am a self-taught developer instigated to learn new things. I'm currently studying Computer Engineering. The languages i often use are Java, Ruby (with Rails framework), C#, HTML5, CSS3 (with a lot of Bootstrap), JavaScript (with JQuery framework) and I use MySQL or SQLServer for database. <br><br> These combined allow me to create new projects that are avaible on my <a href="https://github.com/iFalcao" target="_blank" class="botao-texto">Github</a> profile. You can have a deeper look at my projects <a href="#projects" class="botao-texto">bellow</a>. I love to create websites and softwares so feel free to contact me if you like them too.</p>
+						<p class="apresentacao__resposta-quem"><i class="fa fa-quote-left quote-mark" aria-hidden="true"></i> 
+							I am a self-taught developer instigated to learn new things. I'm currently studying Computer Science. 
+							The languages i often use are Java, Ruby (on Rails), C#, HTML5, CSS3 (Bootstrap), 
+							JavaScript (JQuery) and I use MySQL, SQLServer for database. <br><br> 
+							These combined allow me to create new projects that are avaible on 
+							my <a href="https://github.com/iFalcao" target="_blank" class="botao-texto">Github</a> profile. 
+							You can have a deeper look at my projects <a href="#projects" class="botao-texto">bellow</a>.
+						</p>
 
 						<footer class="profile__rodape">
 							<h4>Do next... <i class="fa fa-forward" aria-hidden="true"></i></h4>
 							<ul>
 								<li class="profile__list"><a class="profile__link" href="#cursos">See my skillset</a></li>
-								<li class="profile__list"><a class="profile__link--curriculo" href="curriculo.html">Check out my Resumè</a></li>
 								<li class="profile__list"><a class="profile__link" href="#projects">See more about my projects</a></li>
 								<li class="profile__list">Send me an e-mail:<a class="profile__link  profile__link--email" href="mailto:vbsfalcao@gmail.com"> vbsfalcao@gmail.com</a></li>
 							</ul>
@@ -89,38 +95,25 @@
 							<div class="jumbotron">
 								<h2 class="cursos-skillset"><i class="fa fa-star" aria-hidden="true"></i> Skillset <i class="fa fa-star" aria-hidden="true"></i></h2>
 								
-								<h3 class="cursos-skillset__titulo"><i class="fa fa-coffee fa-2x" aria-hidden="true"></i> Java</h3>
+								<h3 class="cursos-skillset__titulo"><i class="fa fa-html5" aria-hidden="true"></i> Front-End</h3>
 								<ul>
-									<li class="cursos-skillset__unidade">JDBC e JPA</li>
-									<li class="cursos-skillset__unidade">Maven</li>
-									<li class="cursos-skillset__unidade">Jersey</li>
-									<li class="cursos-skillset__unidade">Restfull Api's</li>
+									<li class="cursos-skillset__unidade">HTML 5</li>
+									<li class="cursos-skillset__unidade">Css (Bootstrap)</li>
+									<li class="cursos-skillset__unidade">JavaScript (Jquery)</li>
+								</ul>
+
+								<h3 class="cursos-skillset__titulo"><i class="fa fa-diamond" aria-hidden="true"></i>
+									Back-End</h3>
+								<ul>
+									<li class="cursos-skillset__unidade">Java</li>
+									<li class="cursos-skillset__unidade">C#</li>
+									<li class="cursos-skillset__unidade">Ruby On Rails</li>
 								</ul>
 								
-								<h3 class="cursos-skillset__titulo"><i class="fa fa-database fa-2x" aria-hidden="true"></i> Database</h3>
+								<h3 class="cursos-skillset__titulo"><i class="fa fa-database" aria-hidden="true"></i> DataBases</h3>
 								<ul>
 									<li class="cursos-skillset__unidade">MySQL</li>
-								</ul>
-								
-								<h3 class="cursos-skillset__titulo"><i class="fa fa-html5 fa-2x" aria-hidden="true"></i> HTML</h3>
-								<ul>
-									<li class="cursos-skillset__unidade">Methodology BEM</li>
-								</ul>
-								
-								<h3  class="cursos-skillset__titulo"><i class="fa fa-css3 fa-2x" aria-hidden="true"></i> CSS</h3>
-								<ul>
-									<li class="cursos-skillset__unidade">Bootstrap</li>
-								</ul>
-								
-								<h3  class="cursos-skillset__titulo"><img src="imagens/js-teste.jpg" height="40" width="40"> JavaScript</h3>
-								<ul>
-									<li class="cursos-skillset__unidade">JQuery</li>
-								</ul>
-								
-								<h3  class="cursos-skillset__titulo"><i class="fa fa-git-square fa-2x" aria-hidden="true"></i> Version Control</h3>
-								<ul>
-									<li class="cursos-skillset__unidade">Git</li>
-									<li class="cursos-skillset__unidade">Github</li>
+									<li class="cursos-skillset__unidade">SQL Server</li>
 								</ul>
 							</div>
 						</div>
@@ -132,18 +125,12 @@
 						<ul class="lista-cursos">
 							<li class="lista-cursos__unidade">RESTful Web Services using Java <br>- by DevMedia.com</li>
 							
-							<li class="lista-cursos__unidade">DataBase using MySQL <br>- by CursoEmVideo.com</li>
-							
-							<li class="lista-cursos__unidade">How to use Git  and GitHub <br>- by Udacity.com</li>
-							
-							<li class="lista-cursos__unidade">HTML5 (Methodology BEM)<br>CSS3 (Bootstrap)<br>JavaScript(JQuery) <br>- by AlgaWorks.com</li>
+							<li class="lista-cursos__unidade">Front-End Guide  <br>- by AlgaWorks.com</li>
 
-							<li class="lista-cursos__unidade">Currently enrolled on Pratical JavaScript <br>- by WatchAndCode.com</li>
+							<li class="lista-cursos__unidade">The complete Ruby on Rails Course <br>- by Udemy.com</li>
 							
 							<li class="lista-cursos__unidade">Currently enrolled on Full Stack Web Development Certification <br>- by  FreeCodeCamp.com</li>
 							
-							<li class="lista-cursos__unidade">Currently enrolled on Spring Data JPA <br>- by  DevMedia.com.br</li>
-
 						</ul>
 					</div>	
 
@@ -156,14 +143,25 @@
 		<div class="layout-projetos" id="projects">
 			<div class="container">
 				<h2 class="projetos__titulo">My Projects <i class="fa fa-check" aria-hidden="true"></i></h2>
+				
+				
+				<article class="projeto-unidade  anime">
+					<h4 class="projeto-unidade__titulo text-center"><i class="fa fa-arrow-right" aria-hidden="true"></i> Blog</h4>
+					<p class="projeto-unidade__descricao text-center">A awesome place to share knowledge. </p>
+					<h3 class="projeto-unidade--bom"><i class="fa fa-smile-o" aria-hidden="true"></i> Good</h3>
+					<p class="projeto-unidade__qualidade-paragrafo">The content is really god (being humble out here guys) and uses a lot of good tech like Ruby on Rails, Jquery, Digital Ocean, Nginx... The list goes on.</p>
+					<h3 class="projeto-unidade--ruim"><i class="fa fa-frown-o" aria-hidden="true"></i> Bad</h3>
+					<p class="projeto-unidade__qualidade-paragrafo">It just launched thus there aren't many posts. </p>
+					<a href="https://icarofalcao.me" title="Let's do it?" target="_blank" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Site</a>
+				</article>
 
 				<article class="projeto-unidade  anime">
 					<h4 class="projeto-unidade__titulo text-center"><i class="fa fa-arrow-right" aria-hidden="true"></i> My Portfolio</h4>
-					<p class="projeto-unidade__descricao text-center">This very site you are seeing right now! It was made using HTML5, CSS3 and JavaScript(JQuery). It's responsive and the code was done following the methodology BEM. It also has this incredible animations from JQuery. I'm using BootStrap and Font Awesome because it's awesome!</p>
+					<p class="projeto-unidade__descricao text-center">This very site you are seeing right now! </p>
 					<h3 class="projeto-unidade--bom"><i class="fa fa-smile-o" aria-hidden="true"></i> Good</h3>
-					<p class="projeto-unidade__qualidade-paragrafo">Shows my knowledge in BootStrap, methodology BEM, FontAwsome, HTML5, CSS3 and JavaScript.</p>
+					<p class="projeto-unidade__qualidade-paragrafo">It was so much fun to make it <i class="fa fa-smile-o" aria-hidden="true"></i></p>
 					<h3 class="projeto-unidade--ruim"><i class="fa fa-frown-o" aria-hidden="true"></i> Bad</h3>
-					<p class="projeto-unidade__qualidade-paragrafo">Is it supposed to have any?</p>
+					<p class="projeto-unidade__qualidade-paragrafo"></p>
 					<a href="https://github.com/iFalcao/Portfolio" target="_blank"  title="Get the code" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Repository</a>
 				</article>
 
@@ -171,30 +169,10 @@
 					<h4 class="projeto-unidade__titulo text-center"><i class="fa fa-arrow-right" aria-hidden="true"></i> Restful-Notes</h4>
 					<p class="projeto-unidade__descricao text-center">Restful Web Service using Java with Maven, Jersey and JDBC.</p>
 					<h3 class="projeto-unidade--bom"><i class="fa fa-smile-o" aria-hidden="true"></i> Good</h3>
-					<p class="projeto-unidade__qualidade-paragrafo">Important base API project for my others projects in construction</p>
+					<p class="projeto-unidade__qualidade-paragrafo">Was a good project so i could get the grasp of a API... How to create it and use it (Postman is really good <i class="fa fa-smile-o" aria-hidden="true"></i> )</p>
 					<h3 class="projeto-unidade--ruim"><i class="fa fa-frown-o" aria-hidden="true"></i> Bad</h3>
 					<p class="projeto-unidade__qualidade-paragrafo"><br></p>
 					<a href="https://github.com/iFalcao/Rest-Notas" target="_blank" title="Get the code" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Repository</a>
-				</article>
-
-				<article class="projeto-unidade  anime">
-					<h4 class="projeto-unidade__titulo text-center"><i class="fa fa-arrow-right" aria-hidden="true"></i> My Contacts</h4>
-					<p class="projeto-unidade__descricao text-center">Ruby on Rails application for contact management. </p>
-					<h3 class="projeto-unidade--bom"><i class="fa fa-smile-o" aria-hidden="true"></i> Good</h3>
-					<p class="projeto-unidade__qualidade-paragrafo">My first step to learn Ruby on Rails</p>
-					<h3 class="projeto-unidade--ruim"><i class="fa fa-frown-o" aria-hidden="true"></i> Bad</h3>
-					<p class="projeto-unidade__qualidade-paragrafo">Not in production</p>
-					<a href="https://github.com/iFalcao/MyContacts" title="Get the code" target="_blank" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Repository</a>
-				</article>
-
-				<article class="projeto-unidade  anime">
-					<h4 class="projeto-unidade__titulo text-center"><i class="fa fa-arrow-right" aria-hidden="true"></i> Basic Calculator</h4>
-					<p class="projeto-unidade__descricao text-center">Java calculator with default operations. </p>
-					<h3 class="projeto-unidade--bom"><i class="fa fa-smile-o" aria-hidden="true"></i> Good</h3>
-					<p class="projeto-unidade__qualidade-paragrafo">- Uses features from JFrame<br>- Can be used by the keyboard</p>
-					<h3 class="projeto-unidade--ruim"><i class="fa fa-frown-o" aria-hidden="true"></i> Bad</h3>
-					<p class="projeto-unidade__qualidade-paragrafo">It only has default operations so far.</p>
-					<a href="https://github.com/iFalcao/BasicCalculator" title="Get the code" target="_blank" class="link_repositorio"><i class="fa fa-code" aria-hidden="true"></i> Repository</a>
 				</article>
 				
 				<a href="#pagina-principal" title="Back to the top of the page" class="botao-topo  text-center"><i class="fa fa-arrow-circle-up fa-4x" aria-hidden="true"></i></a>
@@ -218,7 +196,7 @@
 							<a href="mailto:vbsfalcao@gmail.com" title="Send me an e-mail" target="_blank" class="links__unidade  link--Email"><i class="fa fa-envelope fa-2x"   aria-hidden="true"></i><br> Email</a></p>
 						</div>
 						<div class="col-xs-6 col-sm-2 col-md-1">
-							<a href="skype:vbsfalcao@gmail.com" title="Find me on Skype" target="_blank" class="links__unidade  link--skype"><i class="fa fa-skype fa-2x" aria-hidden="true"></i><br>Skype</a></p>
+							<a href="https://icarofalcao.me/contact" title="Send a message through my blog" target="_blank" class="links__unidade  link--skype"><i class="fa fa-rss fa-2x" aria-hidden="true"></i><br>Blog</a></p>
 						</div>
 					</div>
 			</div>
