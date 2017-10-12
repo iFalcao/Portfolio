@@ -5,9 +5,9 @@ $(document).ready(function(){
 	$('#pagina-principal').css('height', tamanhoTela);
 	
 	function entrada(variavel, tempo) {
-	  	$(variavel).hide();
+	  $(variavel).hide();
 		$(variavel).fadeIn(tempo);
-  	}
+  }
 
 	entrada(".cabeca__titulo", 2500);
 
@@ -25,11 +25,12 @@ $(document).ready(function(){
 	});
 
 	$( ".js-chave, .js-fechar" ).click(
-  		function() {
-    		$( ".js-menu" ).toggle( "menu--exibindo" );
-    		$(".js-fechar").toggle(".menu--exibindo");
+		function() {
+  		$( ".js-menu" ).toggle( "menu--exibindo" );
+  		$(".js-fechar").toggle(".menu--exibindo");
 			$(".js-chave").toggle(".js-fechar");
- 	});
+		}
+ 	);
 
 debounce = function(func, wait, immediate) {
 	var timeout;
